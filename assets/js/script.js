@@ -92,6 +92,7 @@ const showNextQuestionSet = () => {
     let progressBar = `
       <div class="container mt-5">
         <div class="row align-items-center">
+         <h4>HASIL KUISIONER ANDA!</h4>
           <div class="col text-end">
             <span class="percentage ${fixedMindsetBarColor}">${fixedMindsetPercentage}%</span>
           </div>
