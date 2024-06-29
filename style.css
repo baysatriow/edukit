@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.questionSet {
+  display: none;
+}
+
+#SubmitButton {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.ScoreArea {
+  display: none;
+}
+
+#Content {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(45deg, rgba(0, 204, 255, 0.726), rgba(0, 110, 255, 0.836)), url(./img/Bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#Content #ContentWrapper {
+  width: 80%;
+  max-width: 600px;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+#Content #ContentWrapper h2 {
+  font-size: 1.5rem;
+  padding: 10px 0;
+  color: #2c3e50;
+  text-align: center;
+}
+
+#Content #ContentWrapper ul {
+  padding: 10px 20px;
+  margin: auto;
+}
+
+#Content #ContentWrapper ul li {
+  list-style: none;
+  padding: 5px 0;
+  font-size: 1.1rem;
+}
+
+#Content #ContentWrapper ul li input {
+  cursor: pointer;
+}
+
+#Content #ContentWrapper #SubmitButton {
+  text-align: center;
+}
+
+#Content #ContentWrapper #SubmitButton .btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  display: inline-block;
+  min-width: 150px;
+  text-align: center;
+  margin: 10px auto;
+  background: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.3s;
+}
+
+#Content #ContentWrapper #SubmitButton .btn:hover {
+  background: #2980b9;
+}
+
+#Content #ContentWrapper #ShowScore {
+  width: 90%;
+  margin: 15px auto;
+  padding: 20px 10px;
+  background: #ecf0f1;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  color: #2c3e50;
+  text-align: center;
+}
+
+#Content #ContentWrapper #ShowScore .btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  display: inline-block;
+  min-width: 150px;
+  text-align: center;
+  margin: 10px auto;
+  background: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.3s;
+}
+
+#Content #ContentWrapper #ShowScore .btn:hover {
+  background: #2980b9;
+}
+
+#Content #ContentWrapper .ScoreArea {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  #ContentWrapper {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #ContentWrapper {
+    width: 95%;
+  }
+}
