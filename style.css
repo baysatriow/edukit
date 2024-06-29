@@ -135,16 +135,16 @@
 }
 
 .label-highlight {
-  color: #007bff; /* Highlight color, you can adjust this */
+  color: #F2CEC2;; /* Highlight color, you can adjust this */
   font-weight: bold;
 }
 
 .percentage.growth-mindset {
-  color: #007bff; /* Blue for growth mindset */
+  color: #F2CEC2;; /* Blue for growth mindset */
 }
 
 .percentage.fixed-mindset {
-  color: #007bff; /* Orange for fixed mindset */
+  color: #F2CEC2;; /* Orange for fixed mindset */
 }
 
 .percentage.neutral {
@@ -165,12 +165,12 @@
 }
 
 .progress-bar.growth-mindset {
-  background-color: #007bff; /* Blue for growth mindset */
+  background-color: #F2CEC2;; /* Blue for growth mindset */
   right: 0;
 }
 
 .progress-bar.fixed-mindset {
-  background-color: #007bff; /* Orange for fixed mindset */
+  background-color: #F2CEC2;; /* Orange for fixed mindset */
   left: 0;
 }
 
