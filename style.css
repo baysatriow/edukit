@@ -78,7 +78,7 @@
 }
 
 .questionSet input[type="radio"]:checked + label {
-  background-color: #00796b;
+  background-color: #648092;
   color: white;
 }
 
@@ -98,7 +98,7 @@
 }
 
 #nextButton {
-  background-color: #4CAF50;
+  background-color: #7ccd95;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -108,12 +108,12 @@
 }
 
 #nextButton:hover {
-  background-color: #45a049;
+  background-color: rgb(50, 108, 53);
 }
 
 .ScoreArea {
   display: none;
-  width: 90%;
+  width: 100%;
   margin: 15px auto;
   padding: 20px 10px;
   background: #ecf0f1;
@@ -188,9 +188,6 @@
 
 
 @media screen and (max-width: 768px) {
-  #ContentWrapper {
-    width: 90%;
-  }
   .percentage {
     font-size: 0.9rem;
   }
@@ -207,10 +204,15 @@
   .col {
     width: 100%;
     text-align: center;
+    margin-bottom: 10px; /* Add margin for spacing */
   }
 
   .progress {
-    width: 100%;
+    width: 100%; /* Ensure progress bar takes full width */
+  }
+
+  .progress-bar {
+    position: relative; /* Adjust positioning for better handling on small screens */
   }
 }
 
