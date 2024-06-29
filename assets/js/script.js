@@ -1,24 +1,24 @@
 const questionDataBase = [
-  { question: "Testing aja?", option1: "Ya", option2: "Tidak", ans: "answer1_1" },
-  { question: "Testing aja?", option1: "Ya", option2: "Tidak", ans: "answer2_1" },
-  { question: "Testing aja?", option1: "Ya", option2: "Tidak", ans: "answer3_1" },
-  { question: "Testing aja?", option1: "Ya", option2: "Tidak", ans: "answer4_1" },
-  { question: "Testing aja?", option1: "Ya", option2: "Tidak", ans: "answer5_1" },
-  { question: "Full form of JS?", option1: "Java Source", option2: "JavaScript", ans: "answer6_2" },
-  { question: "Which company developed JavaScript?", option1: "Netscape", option2: "Microsoft", ans: "answer7_1" },
-  { question: "What is the full form of DOM?", option1: "Document Object Model", option2: "Data Object Model", ans: "answer8_1" },
-  { question: "Which tag is used to include CSS in HTML?", option1: "<style>", option2: "<script>", ans: "answer9_1" },
-  { question: "Which symbol is used for comments in CSS?", option1: "/* */", option2: "//", ans: "answer10_1" },
-  { question: "Which HTML attribute is used to define inline styles?", option1: "class", option2: "style", ans: "answer11_2" },
-  { question: "What does JSON stand for?", option1: "JavaScript Object Notation", option2: "Java Source Object Notation", ans: "answer12_1" },
-  { question: "Which HTML element is used to define the title of a document?", option1: "<title>", option2: "<head>", ans: "answer13_1" },
-  { question: "Which property is used to change the background color in CSS?", option1: "color", option2: "background-color", ans: "answer14_2" },
-  { question: "Which method is used to add an element at the end of an array in JavaScript?", option1: "push()", option2: "pop()", ans: "answer15_1" },
-  { question: "Which HTML element is used for the largest heading?", option1: "<h1>", option2: "<h6>", ans: "answer16_1" },
-  { question: "Which property is used to change the text color in CSS?", option1: "text-color", option2: "color", ans: "answer17_2" },
-  { question: "Which method is used to remove the last element from an array in JavaScript?", option1: "pop()", option2: "shift()", ans: "answer18_1" },
-  { question: "What does SQL stand for?", option1: "Structured Query Language", option2: "Simple Query Language", ans: "answer19_1" },
-  { question: "Which attribute is used to specify the source file for an <img> element?", option1: "src", option2: "href", ans: "answer20_1" }
+  { question: "Anda merasa memiliki peluang belajar yang sama dengan teman-teman yang lain", option1: "Ya", option2: "Tidak", ans: "answer1_1" },
+  { question: "Anda merasa semua siswa di sekolah mendapatkan kesempatan yang setara untuk sukses ", option1: "Ya", option2: "Tidak", ans: "answer2_1" },
+  { question: "Anda selalu mencari solusi sendiri sebelum meminta bantuan dari guru", option1: "Ya", option2: "Tidak", ans: "answer3_1" },
+  { question: "Anda senang ketika anda dapat menyelesaikan masalah secara mandiri", option1: "Ya", option2: "Tidak", ans: "answer4_1" },
+  { question: "Anda merasa bahwa kebutuhan belajar anda diakui dan dihargai di sekolah", option1: "Ya", option2: "Tidak", ans: "answer5_1" },
+  { question: "Anda merasa didukung untuk mengembangkan kemampuan anda secara individu di sekolah", option1: "Ya", option2: "Tidak", ans: "answer6_1" },
+  { question: "Anda merasa termotivasi untuk mencapai harapan yang tinggi karena dukungan dari guru anda", option1: "Ya", option2: "Tidak", ans: "answer7_1" },
+  { question: "Anda merasa dihargai ketika anda berusaha keras untuk mencapai hasil yang baik disekolah", option1: "Ya", option2: "Tidak", ans: "answer8_1" },
+  { question: "Anda merasa nyaman bertanya kepada guru saat tidak mengerti sesuatu", option1: "Ya", option2: "Tidak", ans: "answer9_1" },
+  { question: "Anda merasa bahwa feedback/ umpan balik dari guru dapat membantu anda dalam meningkatkan kinerja akademik anda", option1: "Ya", option2: "Tidak", ans: "answer10_1" },
+  { question: "Anda merasa nyaman berbicara dengan guru anda tentang kehidupan pribadi ", option1: "Ya", option2: "Tidak", ans: "answer11_1" },
+  { question: "Anda pernah berbicara dengan guru anda tentang tujuan atau impian masa depan ", option1: "Ya", option2: "Tidak", ans: "answer12_1" },
+  { question: "Anda merasa guru anda menghargai proses belajar anda meskipun hasilnya tidak sempurna", option1: "Ya", option2: "Tidak", ans: "answer13_1" },
+  { question: "Guru anda lebih fokus pada bagaimana anda belajar daripada hasil yang anda capai", option1: "Ya", option2: "Tidak", ans: "answer14_1" },
+  { question: "Anda merasa kesalahan merupakan sebuah kesempatan untuk belajar, bukan sebagai kegagalan", option1: "Ya", option2: "Tidak", ans: "answer15_1" },
+  { question: "Anda merasa bahwa masalah dapat mendorong anda untuk mencoba menemukan jalan keluarnya", option1: "Ya", option2: "Tidak", ans: "answer16_1" },
+  { question: "Guru anda pernah mengatakan bahwa membuat kesalahan merupakan proses belajar", option1: "Ya", option2: "Tidak", ans: "answer17_1" },
+  { question: "Anda merasa bahwa penerapan empati dalam konteks pendidikan itu penting", option1: "Ya", option2: "Tidak", ans: "answer18_1" },
+  { question: "Anda sering bekerja dalam kelompok untuk menyelesaikan tugas atau proyek", option1: "Ya", option2: "Tidak", ans: "answer19_1" },
+  { question: "Anda merasa bahwa ketika anda ditempatkan dalam situasi kelompok, setiap anggota kelompoknya memiliki tanggung jawab yang sama terhadap tujuan kelompok", option1: "Ya", option2: "Tidak", ans: "answer20_1" }
 ];
 
 const questionContainer = document.getElementById("quizContainer");
@@ -118,6 +118,7 @@ const showNextQuestionSet = () => {
 
     scoreArea.style.display = "block";
     scoreArea.innerHTML = progressBar;
+    retryButton.style.display = "block";
   }
 };
 
@@ -133,7 +134,7 @@ nextButton.addEventListener("click", () => {
     resetAnswers();
     showNextQuestionSet();
   } else {
-    alert("Tolong Jawab Pertanyaan saat ini!");
+    alert("Jawab Terlebih Dahulu Semua Pertanyaan yang ada!");
   }
 });
 
