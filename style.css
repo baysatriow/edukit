@@ -135,16 +135,16 @@
 }
 
 .label-highlight {
-  color: #F2CEC2;; /* Highlight color, you can adjust this */
+  color: #C0D5E6; /* Highlight color, you can adjust this */
   font-weight: bold;
 }
 
 .percentage.growth-mindset {
-  color: #F2CEC2;; /* Blue for growth mindset */
+  color: #C0D5E6; /* Blue for growth mindset */
 }
 
 .percentage.fixed-mindset {
-  color: #F2CEC2;; /* Orange for fixed mindset */
+  color: #C0D5E6; /* Orange for fixed mindset */
 }
 
 .percentage.neutral {
@@ -165,12 +165,12 @@
 }
 
 .progress-bar.growth-mindset {
-  background-color: #F2CEC2;; /* Blue for growth mindset */
+  background-color: #C0D5E6; /* Blue for growth mindset */
   right: 0;
 }
 
 .progress-bar.fixed-mindset {
-  background-color: #F2CEC2;; /* Orange for fixed mindset */
+  background-color: #C0D5E6; /* Orange for fixed mindset */
   left: 0;
 }
 
@@ -210,6 +210,7 @@
 @media screen and (max-width: 480px) {
   #ContentWrapper {
     width: 95%;
+    padding: 20px;
   }
 
   .questionSet ul {
@@ -234,12 +235,30 @@
     font-size: 0.9rem; /* Adjusted font size for mobile */
     padding: 8px 15px; /* Adjusted padding for mobile */
   }
+
+  .container {
+    padding: 10px;
+  }
+
+  .percentage {
+    font-size: 0.8rem; /* Smaller font size for percentages */
+  }
+
+  .label {
+    font-size: 0.8rem; /* Smaller font size for labels */
+  }
+
+  #retryButton {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+    margin: 15px auto;
+  }
 }
 
 #retryButton {
   display: block;
   margin: 20px auto; /* Center the button */
-  background-color: #F2CEC2;
+  background-color: #C0D5E6;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -249,5 +268,5 @@
 }
 
 #retryButton:hover {
-  background-color: #ae958d;
+  background-color: #c49897;
 }
