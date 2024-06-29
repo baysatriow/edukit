@@ -186,9 +186,31 @@
   background-color: #6c757d; /* Grey for neutral */
 }
 
+
 @media screen and (max-width: 768px) {
   #ContentWrapper {
     width: 90%;
+  }
+  .percentage {
+    font-size: 0.9rem;
+  }
+
+  .label {
+    font-size: 0.9rem;
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .col {
+    width: 100%;
+    text-align: center;
+  }
+
+  .progress {
+    width: 100%;
   }
 }
 
